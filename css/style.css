@@ -50,6 +50,7 @@ select {
 
 form {
   padding: 1rem 1.5rem;
+  max-width: 800px;
 }
 
 form h1 {
