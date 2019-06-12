@@ -7,6 +7,28 @@ body {
   padding: 0;
 }
 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  font-size: 20px;
+}
+
+textarea,
+fieldset,
+input,
+select {
+  /* https://stackoverflow.com/questions/4230375/whats-the-easiest-way-to-remove-fieldset-border-lines used to remove border */
+  outline: none;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 16px;
+
+}
+
 .code-rev {
   background: #2d3945;
   text-align: center;
@@ -18,8 +40,83 @@ body {
 
 .code-rev p {
   color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
+
+form {
+  padding: 1rem 1.5rem;
+}
+
+form h1 {
+  text-align: center;
+  color: #2d3945;
+}
+
+form p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgba(45, 57, 69, .5)
+}
+
+form hr {
+  /* https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element*/
+  display: block;
+  height: 1px;
+  border-top: 4px solid #2d3945;
+  margin: 1em auto -12px auto;
+  padding: 0;
+}
+
+form .hr-thin {
+  /* https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element*/
+  display: block;
+  height: 1px;
+  border-top: 1px solid #2d3945;
+  margin: 1em auto 1rem auto;
+  padding: 0;
+}
+
+
+legend {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3945;
+}
+
+form label {
+  display: block;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  color: rgba(45, 57, 69, .8)
+}
+
+form input {
+  width: 100%;
+  height: 75px;
+  background: #eff0f1;
+  border-radius: 5px;
+
+}
+
+form input:focus {
+  border: 2px solid rgb(45, 57, 69)
+}
+
+input[placeholder="Required"] {
+  text-align: right;
+  padding-right: .5rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+  background: #4ebbb5;
+}
 
 /* .nl-signup {
   width: 600px;
