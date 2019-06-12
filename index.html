@@ -38,9 +38,6 @@
       <label for="state">State</label>
       <input type="text" name="state" id="state">
 
-      <label for="state">State</label>
-      <input type="text" name="state" id="state">
-
       <label for="zip">Zip Code</label>
       <input type="text" name="zip-code" id="zip">
 
@@ -50,21 +47,36 @@
     <fieldset>
       <legend>Newsletter</legend>
 
-      <label>Select the newsletters you would like to recieve</label>
+      <label>Select the newsletters you would like to recieve</label><br>
 
-      <input type="radio" name="type-of-news" id="html-news" value="news">
+      <input type="checkbox" name="type-of-news" id="html-news" value="html-news">
       <label for="html-news">HTML News</label><br>
 
-      <input type="radio" name="type-of-news" id="html-news" value="news">
-      <label for="html-news">CSS News</label><br>
+      <input type="checkbox" name="type-of-news" id="css-news" value="css-news">
+      <label for="css-news">CSS News</label><br>
 
-      <input type="radio" name="type-of-news" id="jsnews" value="news">
+      <input type="checkbox" name="type-of-news" id="js-news" value="js-news">
       <label for="js-news">Javascript News</label><br>
+
+
+      <label>Newsletter Format</label><br>
+
+      <input type="checkbox" name="format" id="format-html" value="html">
+      <label for="format-html">HTML</label><br>
+
+      <input type="checkbox" name="format" id="format-plain-text" value="plain-text">
+      <label for="format-plain-text">Plain text</label>
 
 
     </fieldset>
 
+    <label for="other-topics">Other Topics you'd like to hear about</label>
+    <textarea name="other-topics" id="other-topics"></textarea>
+    <button type="submit">Sign Up</button>
 
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
 
   </form>
 
