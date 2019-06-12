@@ -5,16 +5,19 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 input[type="text"],
-input[type="password"],
 input[type="email"],
 input[type="number"],
 input[type="tel"],
 textarea,
+button,
+option,
 select {
   font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 textarea,
@@ -92,7 +95,9 @@ form label {
   color: rgba(45, 57, 69, .8)
 }
 
-form input {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
   width: 100%;
   height: 75px;
   background: #eff0f1;
@@ -106,7 +111,54 @@ form input:focus {
 
 input[placeholder="Required"] {
   text-align: right;
-  padding-right: .5rem;
+  padding-right: 30px;
+}
+
+input::placeholder {
+  /* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+  color: rgba(45, 57, 69, .3)
+}
+
+select {
+  display: block;
+  padding: 1rem;
+  height: 75px;
+  width: 100%;
+  font-size: 1.3rem;
+  color: rgba(45, 57, 69, .3)
+}
+
+#zip {
+  width: 50%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+label[for="html-news"],
+label[for="css-news"],
+label[for="js-news"],
+label[for="format-html"],
+label[for="format-plain-text"] {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+form label:last-child {
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  background: #eff0f1;
+
 }
 
 button {
@@ -116,6 +168,10 @@ button {
   color: white;
   padding: 1rem 0;
   background: #4ebbb5;
+}
+
+footer p {
+  font-style: italic;
 }
 
 /* .nl-signup {
