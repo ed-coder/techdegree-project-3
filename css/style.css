@@ -60,19 +60,23 @@ form {
 form h1 {
   text-align: center;
   color: #2d3945;
+  font-size: 1.8rem;
+  margin-bottom: -10px;
+
 }
 
 form p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
-  color: rgba(45, 57, 69, .5)
+  color: rgba(45, 57, 69, .5);
+  margin-bottom: 50px;
 }
 
 form hr {
   /* https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element*/
   display: block;
   height: 1px;
-  border-top: 4px solid #2d3945;
+  border-top: 5px solid #2d3945;
   margin: 1em auto -12px auto;
   padding: 0;
 }
@@ -81,7 +85,7 @@ form .hr-thin {
   /* https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element*/
   display: block;
   height: 1px;
-  border-top: 1px solid #2d3945;
+  border-top: 2px solid #2d3945;
   margin: 1em auto 1rem auto;
   padding: 0;
 }
@@ -134,15 +138,22 @@ select {
 }
 
 #zip {
-  max-width: 35%;
+  max-width: 50%;
+}
+
+.nl-btn-holder {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  width: 20px;
   padding: 0;
   margin: 0;
+
 }
 
 label[for="html-news"],
@@ -152,12 +163,15 @@ label[for="format-html"],
 label[for="format-plain-text"] {
   display: inline-block;
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 0 16px;
+
 }
 
-form label:last-child {
-  margin: 0;
+label[for="format-type"] {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
+
 
 textarea {
   min-height: 75px;
@@ -178,6 +192,8 @@ button {
 
 footer p {
   font-style: italic;
+  font-size: 1rem;
+  margin-top: 40px;
 }
 
 @media (min-width: 768px) {
