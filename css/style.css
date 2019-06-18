@@ -270,6 +270,7 @@ footer p {
 
   .nl-label {
     margin: -10px 0 0 0;
+    font-size: 1.2rem;
   }
 
   input[type="text"],
@@ -280,5 +281,29 @@ footer p {
     height: 50px;
     text-align: left;
     padding-left: 10px;
+    font-size: 1rem;
   }
+
+  .format-type,
+  .nl-label {
+    font-size: 1rem;
+  }
+
+  label[for="html-news"],
+  label[for="css-news"],
+  label[for="js-news"],
+  label[for="format-html"],
+  label[for="format-plain-text"],
+  textarea {
+    font-size: 1rem;
+  }
+
+  label[for="other-topics"] {
+    font-size: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+
 }
