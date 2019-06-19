@@ -1,9 +1,9 @@
+/* general styles */
+
 * {
   box-sizing: border-box;
 
 }
-
-
 
 body {
   margin: 0;
@@ -15,26 +15,22 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="tel"],
+input,
+fieldset,
 textarea,
 button,
 option,
 select {
-  font-size: 20px;
-  font-family: 'Noto Sans HK', sans-serif;
-}
-
-textarea,
-fieldset,
-input,
-select {
   /* https://stackoverflow.com/questions/4230375/whats-the-easiest-way-to-remove-fieldset-border-lines used to remove border */
+  font-size: 16px;
+  font-family: 'Noto Sans HK', sans-serif;
   outline: none;
   border: none;
   margin-bottom: 30px;
-  font-size: 16px;
-
 }
 
+
+/* Style the top bar */
 .code-rev {
   background: #2d3945;
   text-align: center;
@@ -51,6 +47,7 @@ select {
   font-weight: bold;
 }
 
+/* Form styles */
 
 form {
   padding: 1rem 1.5rem;
@@ -90,6 +87,7 @@ form .hr-thin {
   padding: 0;
 }
 
+/* first fieldset styles */
 
 legend {
   font-size: 2rem;
@@ -114,11 +112,15 @@ input[type="tel"] {
   border-radius: 5px;
   text-align: right;
   padding-right: 30px;
+  transition: border .5s ease-out, background .5s ease-in-out;
 
 }
 
+
+
 form input:focus {
-  border: 2px solid rgb(45, 57, 69)
+  border: 2px solid rgb(45, 57, 69);
+  background: #c2e7c5;
 }
 
 input[placeholder="Required"] {
@@ -137,13 +139,34 @@ select {
   height: 75px;
   width: 100%;
   font-size: 1.3rem;
-  color: rgba(45, 57, 69, .3)
 }
 
 #zip {
   max-width: 50%;
 }
 
+/******************** 
+
+Field 2 styles
+
+**********************/
+
+/* div holds checkbox/radio and labels */
+
+.fieldset-2 {
+  background: rgba(250, 250, 210, .5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.fieldset-2 legend {
+  position: relative;
+  top: 20px;
+  padding: 0 0 0 0;
+  margin: 0 0 16px 0;
+}
+
+/* div holds checkbox/radio and label */
 .nl-btn-holder {
   display: flex;
   align-items: center;
@@ -170,20 +193,30 @@ label[for="format-plain-text"] {
 
 }
 
+/* class for newletter label */
 .format-type {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 
+/********************
+ Text area styles 
+ ********************/
 textarea {
   min-height: 75px;
   width: 100%;
   height: 100px;
   background: #eff0f1;
+  padding: 10px;
 
 }
 
+textarea::placeholder {
+  color: lightgray;
+}
+
+/* button and footer styles */
 button {
   display: block;
   width: 100%;
@@ -226,6 +259,7 @@ footer p {
     margin-bottom: 20px;
   }
 
+  /* class for div that holds input fields */
   .label-holder {
     margin: 20px 0 -15px 0;
     display: flex;
@@ -268,6 +302,7 @@ footer p {
     margin: -5px 0;
   }
 
+  /* class for newletter label */
   .nl-label {
     margin: -10px 0 0 0;
     font-size: 1.2rem;
